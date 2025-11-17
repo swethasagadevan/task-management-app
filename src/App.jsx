@@ -12,11 +12,8 @@ function App() {
   }
   const [taskList,setTaskList] = useState({initialtaskvalue});
   const [tableData,settableData] = useState([])
-  const [editTask,setEditTask] =useState({});
   const [editIndex,setEditIndex] =useState(null)
-  //const [editIdx,setEditIdx] =useState(null);
-  
-  
+ 
 
   
   return (
