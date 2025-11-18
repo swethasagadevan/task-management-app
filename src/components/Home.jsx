@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Home = ({tableData,setEditIndex,setTaskList}) => {
   
-  const [newlisttodisplay,setnewlisttodisplay] =useState(tableData);
+  const [newlisttodisplay,setnewlisttodisplay] =useState(tableData || []);
   const navigator = useNavigate()
   const handleAddTaskBtn=()=>{
       navigator("/task")
@@ -92,5 +92,6 @@ const Home = ({tableData,setEditIndex,setTaskList}) => {
     </section>
   )
 }
+
 
 export default Home;
