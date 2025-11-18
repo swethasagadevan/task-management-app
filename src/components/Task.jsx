@@ -72,7 +72,7 @@ const Task = ({initialtaskvalue,tableData,settableData,taskList,setTaskList,edit
                     const { value }=e.target;
                     handleTaskList("title",value)
                 }
-                } required />
+                } value={taskList?.title} required />
             <br/>
             <label className='font-bold mb-4'>Description:</label> 
             <textarea name="descinput" className='border-2 border-gray-400 mx-5 p-2'
@@ -81,7 +81,7 @@ const Task = ({initialtaskvalue,tableData,settableData,taskList,setTaskList,edit
                     const { value }=e.target;
                     handleTaskList("desc",value)
                 }
-                } required ></textarea>
+                } value={taskList?.desc} required ></textarea>
             <br/>
 
         <div className='text-center'>
@@ -95,3 +95,4 @@ const Task = ({initialtaskvalue,tableData,settableData,taskList,setTaskList,edit
 
 
 export default Task;
+
